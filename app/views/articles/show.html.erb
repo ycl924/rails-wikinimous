@@ -1,0 +1,8 @@
+<h1>New article</h1>
+
+<h2> <%= @article.title %></h2>
+<p> <%= @article.content %></p>
+
+<%= button_to "Edit", edit_article_path(@article), class: "btn-primary", method: :get %></button>
+
+<%= button_to "Delete", article_path(@article), class: "btn-danger", method: :delete, data: { confirm: "Are you sure?" }  %>
